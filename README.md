@@ -15,3 +15,6 @@ Before launch, connect the contact form to your preferred email/CRM and replace 
 
 ## Current offer
 Write Empowered Author Accelerator™ — 12 weeks — $5,000.
+
+## Contact form
+The contact form uses Netlify Forms. In Netlify, go to **Forms** and make sure **form detection is enabled**, then redeploy the site. Submissions will appear in the site's Forms area. To receive email alerts, configure a **Form submission notification** under the site's Notifications settings.

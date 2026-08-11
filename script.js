@@ -8,7 +8,38 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
   });
 });
 
-document.querySelector('.contact-form')?.addEventListener('submit', e => {
-  e.preventDefault();
-  alert('Thanks! The form is ready to connect to your email or CRM.');
+const contactForm = document.querySelector('.contact-form');
+
+contactForm?.addEventListener('submit', async (event) => {
+  event.preventDefault();
+
+  const form = event.currentTarget;
+  const button = form.querySelector('button[type="submit"]');
+  const status = form.querySelector('.form-status');
+  const formData = new FormData(form);
+
+  button.disabled = true;
+  button.textContent = 'Sending...';
+  status.textContent = '';
+  status.className = 'form-status';
+
+  try {
+    const response = await fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: new URLSearchParams(formData).toString()
+    });
+
+    if (!response.ok) throw new Error('Submission failed');
+
+    form.reset();
+    status.textContent = 'Thank you! Your message has been received. Nathan will be in touch soon.';
+    status.className = 'form-status success';
+  } catch (error) {
+    status.textContent = 'Something went wrong. Please try again or contact Nathan directly.';
+    status.className = 'form-status error';
+  } finally {
+    button.disabled = false;
+    button.textContent = 'Start the Conversation';
+  }
 });

@@ -214,12 +214,16 @@
       <h2>Your Story.<br>Your Expertise.<br><span>Your Book.</span></h2>
       <p>You don't have to figure it all out alone. Let's talk about the book you've been thinking about—and what it could become.</p>
     </div>
-    <form class="contact-form" action="#" method="post">
-      <label>Name<input type="text" name="name" required></label>
-      <label>Email<input type="email" name="email" required></label>
-      <label>Tell me about your book idea<textarea name="message" rows="5"></textarea></label>
+    <form class="contact-form" name="book-inquiry" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+      <input type="hidden" name="form-name" value="book-inquiry">
+      <p class="hidden-field">
+        <label>Don't fill this out if you're human: <input name="bot-field"></label>
+      </p>
+      <label>Name<input type="text" name="name" autocomplete="name" required></label>
+      <label>Email<input type="email" name="email" autocomplete="email" required></label>
+      <label>Tell me about your book idea<textarea name="message" rows="5" required></textarea></label>
       <button class="btn" type="submit">Start the Conversation</button>
-      <small>Form connection can be added to your preferred email/CRM before launch.</small>
+      <small class="form-status" aria-live="polite"></small>
     </form>
   </div>
 </section>
