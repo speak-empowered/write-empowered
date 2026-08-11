@@ -14,3 +14,6 @@
 .about-copy blockquote{margin:28px 0;padding:20px 24px;border-left:4px solid var(--gold);background:var(--light);font-family:"Playfair Display",Georgia,serif;font-size:20px;line-height:1.45;color:var(--navy)}
 .credibility{display:flex;flex-wrap:wrap;gap:9px;margin-top:25px}
 .credibility span{font-size:11px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--navy);border:1px solid var(--line);padding:8px 10px;border-radius:3px;background:#fff}
+
+.amazon-btn{display:inline-block;margin:8px 0 10px;padding:9px 13px;border:1px solid var(--gold);color:var(--navy);font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.05em;border-radius:3px;background:#fff}
+.amazon-btn:hover{background:var(--gold);color:var(--navy)}
