@@ -11,3 +11,7 @@ Starter static site for GitHub + Netlify.
 6. Deploy.
 
 Before launch, connect the contact form to your preferred email/CRM and replace placeholder footer links with the final Speak Empowered and Lead Empowered TV URLs.
+
+
+## Current offer
+Write Empowered Author Accelerator™ — 12 weeks — $5,000.
