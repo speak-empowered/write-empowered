@@ -75,7 +75,10 @@
 <header class="site-header">
   <div class="container nav">
     <a href="index.html" class="brand"><img src="assets/logo.png" alt="Write Empowered"></a>
-    <nav>
+    <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-nav">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="primary-nav">
       <a href="index.html">Home</a>
       <a href="author-accelerator.html">Author Accelerator</a>
       <a href="voices-of-impact.html">Voices of Impact</a>
@@ -269,7 +272,7 @@
     <div class="footer-links">
       <a href="https://leadempowered.com" target="_blank" rel="noopener">Lead Empowered</a>
       <span>•</span>
-      <a href="https://speakempowered.netlify.app/" target="_blank" rel="noopener">Speak Empowered</a>
+      <a href="https://speakempowered.com" target="_blank" rel="noopener">Speak Empowered</a>
       <span>•</span>
       <a href="https://lead-empowered-tv.netlify.app/" target="_blank" rel="noopener">Lead Empowered TV</a>
     </div>
@@ -305,5 +308,6 @@ form?.addEventListener('submit', async (event) => {
   }
 });
 </script>
+<script src="mobile-menu.js"></script>
 </body>
 </html>
