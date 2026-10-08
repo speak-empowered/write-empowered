@@ -47,3 +47,22 @@
   .nav nav a{display:block;padding:11px 10px;text-align:center;color:#fff;border-bottom:1px solid rgba(255,255,255,.08);font-size:13px}
   .nav nav a:nth-child(odd){border-right:1px solid rgba(255,255,255,.08)}
 }
+
+/* Premium homepage hero — aligned with Voices of Impact */
+.hero{position:relative;overflow:hidden;background:radial-gradient(ellipse at 76% 80%,rgba(43,107,153,.65) 0%,rgba(12,45,87,.72) 30%,transparent 65%),linear-gradient(125deg,#050608 0%,#0b1c32 48%,#0c2d57 100%);padding:92px 0 86px;color:#fff}
+.hero:before{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(115deg,transparent 60%,rgba(200,154,61,.075) 61%,transparent 62%)}
+.hero .hero-grid{position:relative;z-index:1;grid-template-columns:1.12fr .88fr;gap:65px}
+.hero h1{color:#fff;font-size:clamp(52px,6.2vw,82px);letter-spacing:-.025em;text-shadow:0 10px 35px rgba(0,0,0,.18)}
+.hero h1 span{color:#d9ad54}
+.hero .eyebrow{color:#d9ad54}
+.hero .hero-lead{color:#e0e9f4;font-size:20px;line-height:1.65}
+.hero .text-link{color:#f1d394}
+.hero .text-link:hover{color:#fff}
+.hero .btn{background:#d9ad54;color:#071d35;box-shadow:0 12px 28px rgba(0,0,0,.22)}
+.hero .btn:hover{background:#f0c978}
+.hero-card{background:linear-gradient(155deg,rgba(20,62,102,.92),rgba(5,13,25,.95));border:1px solid rgba(217,173,84,.65);border-top:4px solid #d9ad54;border-radius:8px;box-shadow:0 30px 75px rgba(0,0,0,.38);padding:48px}
+.hero-card p{color:#fff;font-size:clamp(23px,2.2vw,30px)}
+.hero-card strong{color:#fff}
+.hero-card small{color:#c9d6e4;opacity:1}
+@media(max-width:900px){.hero .hero-grid{grid-template-columns:1fr;gap:38px}.hero{padding:68px 0 65px}.hero-card{max-width:650px}}
+@media(max-width:600px){.hero h1{font-size:clamp(43px,11vw,58px)}.hero .hero-lead{font-size:18px}.hero-card{padding:30px}.hero-card p{font-size:23px}}
