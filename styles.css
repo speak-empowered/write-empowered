@@ -66,3 +66,7 @@
 .hero-card small{color:#c9d6e4;opacity:1}
 @media(max-width:900px){.hero .hero-grid{grid-template-columns:1fr;gap:38px}.hero{padding:68px 0 65px}.hero-card{max-width:650px}}
 @media(max-width:600px){.hero h1{font-size:clamp(43px,11vw,58px)}.hero .hero-lead{font-size:18px}.hero-card{padding:30px}.hero-card p{font-size:23px}}
+
+/* Homepage hero artwork: radiant open book */
+.hero{background-image:linear-gradient(90deg,rgba(1,7,16,.86) 0%,rgba(2,10,23,.69) 42%,rgba(2,10,23,.48) 100%),url("assets/Radiant%20Golden%20Wings%20of%20Light.png");background-position:center center;background-size:cover;background-repeat:no-repeat}
+@media(max-width:600px){.hero{background-position:50% center;background-image:linear-gradient(90deg,rgba(1,7,16,.87),rgba(1,7,16,.69)),url("assets/Radiant%20Golden%20Wings%20of%20Light.png")}}
