@@ -73,3 +73,12 @@
 
 /* Footer scripture reference */
 .footer-faith{display:inline-flex;align-items:center;gap:7px;color:#fff;white-space:nowrap;font-size:inherit}.footer-faith svg{display:block;flex:none;color:#fff}.footer-faith-divider{color:inherit}
+
+/* Scrolling Write Empowered brand banner */
+.story-ticker{overflow:hidden;background:linear-gradient(90deg,#050608,#0c2d57 50%,#050608);border-top:1px solid rgba(217,173,84,.55);border-bottom:2px solid #d9ad54;padding:19px 0;color:#fff}
+.story-ticker-track{display:flex;width:max-content;animation:story-ticker-scroll 42s linear infinite}
+.story-ticker-group{display:flex;align-items:center;flex-shrink:0;gap:28px;padding-right:28px}
+.story-ticker-item{font-family:inherit;font-size:clamp(13px,1.35vw,17px);font-weight:800;letter-spacing:.16em;white-space:nowrap;color:#fff}
+.story-ticker-star{color:#d9ad54;font-size:18px;line-height:1}
+@keyframes story-ticker-scroll{to{transform:translateX(-50%)}}
+@media(prefers-reduced-motion:reduce){.story-ticker-track{animation:none}.story-ticker{overflow-x:auto}}
