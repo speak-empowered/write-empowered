@@ -102,3 +102,13 @@
 .eagle-offer{background:linear-gradient(120deg,#0c2d57 0%,#060a12 100%);border-top:1px solid rgba(217,173,84,.32)}
 .eagle-offer-logo img{width:100%;max-width:330px;max-height:190px;object-fit:contain}
 .eagle-offer-logo{min-height:210px}
+
+/* Side-by-side affiliate features on desktop */
+.affiliate-partners-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;padding-top:36px;padding-bottom:36px}
+.affiliate-partners-grid>.partner-offer{border:1px solid rgba(217,173,84,.4);border-radius:12px;padding:32px 25px;min-width:0;display:flex}
+.affiliate-partners-grid .partner-offer-inner{width:100%;max-width:none;padding:0;display:flex;flex-direction:column;align-items:stretch;gap:22px}
+.affiliate-partners-grid .partner-offer-copy{flex:1}
+.affiliate-partners-grid .partner-offer h2{font-size:clamp(26px,2.4vw,36px)}
+.affiliate-partners-grid .partner-offer-logo{margin-top:auto;min-height:175px}
+.affiliate-partners-grid .partner-offer-disclosure{font-size:12px}
+@media(max-width:760px){.affiliate-partners-grid{grid-template-columns:1fr;gap:18px;padding-top:24px;padding-bottom:24px}.affiliate-partners-grid>.partner-offer{padding:28px 20px}}
