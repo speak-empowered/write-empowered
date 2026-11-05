@@ -97,3 +97,8 @@
 .partner-offer-logo>span{color:#0c2d57;font-size:14px;font-weight:700}
 @media(max-width:760px){.partner-offer{padding:40px 0}.partner-offer-inner{grid-template-columns:1fr;gap:24px}.partner-offer-logo{min-height:155px}}
 @media(prefers-reduced-motion:reduce){.partner-offer-logo{transition:none}}
+
+/* Eagle-Research affiliate partner feature */
+.eagle-offer{background:linear-gradient(120deg,#0c2d57 0%,#060a12 100%);border-top:1px solid rgba(217,173,84,.32)}
+.eagle-offer-logo img{width:100%;max-width:330px;max-height:190px;object-fit:contain}
+.eagle-offer-logo{min-height:210px}
